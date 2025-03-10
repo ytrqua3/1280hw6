@@ -1,0 +1,1 @@
+sed -r "/FEDERALIST No. $2/,/(FEDERALIST No.)|(\*\*\* END OF THE PROJECT GUTENBERG EBOOK THE FEDERALIST PAPERS \*\*\*)/s/$3/$4/" FederalistPapers.txt | sed -r -n "/FEDERALIST No. $2/,/(FEDERALIST No.)|(\*\*\* END OF THE PROJECT GUTENBERG EBOOK THE FEDERALIST PAPERS \*\*\*)/p" | head -n-1
